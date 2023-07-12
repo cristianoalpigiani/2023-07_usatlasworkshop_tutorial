@@ -396,6 +396,7 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
+include swc/schedule.html
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}

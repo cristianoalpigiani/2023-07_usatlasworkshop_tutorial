@@ -41,16 +41,12 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
  <div class="syllabus">
 	<h2 id="schedule">Schedule</h2>
 
-
 	<table class="table table-striped">
-	  <tr>
-	    
+	  <tr>	    
 	    <td class="col-md-2"></td>
 	    <td class="col-md-3"><a href="./setup.html">Setup</a></td>
 	    <td class="col-md-7">Download files required for the lesson</td>
 	  </tr>
-	  
-	 <!--
 	  <tr>	    
 	    <td class="col-md-2">00:00</td>
 	    <td class="col-md-3">
@@ -60,7 +56,6 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
               Why having an Analysis Facility at US-ATLAS?
 	    </td>
 	  </tr>
-	  -->
 	 
 	  <tr>	    
 	    <td class="col-md-2">00:00</td>

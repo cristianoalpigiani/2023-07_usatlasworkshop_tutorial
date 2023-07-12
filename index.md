@@ -20,6 +20,22 @@ humandate: "July 19, 2023"    # human-readable dates for the workshop (e.g., "Fe
 #eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
+This tutorial wants to guide the users through the baseline setup to submit a job at an analysis facility (UChicago in this tutorial).
+
+The tutorial is held on 19th July @ Yale University.
+
+> ## Prerequisites
+>
+>
+> This assumes you already have:
+>
+> - a CERN account
+>
+> - the respective X509 Proxy Certificate, e.g. to access ATLAS Data
+>
+>
+{: .prereq}
+
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
 {% comment %}

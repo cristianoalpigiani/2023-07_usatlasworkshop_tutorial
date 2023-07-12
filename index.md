@@ -20,7 +20,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 #eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-<div class="alert alert-warning">
+<div class="alert alert-success">
 This tutorial wants to guide the users through the baseline setup to submit a job at an analysis facility (UChicago in this tutorial).
 </div>
 

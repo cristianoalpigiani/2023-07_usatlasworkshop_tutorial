@@ -37,6 +37,101 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 >
 {: .prereq}
 
+
+ <div class="syllabus">
+	<h2 id="schedule">Schedule</h2>
+
+
+	<table class="table table-striped">
+	  <tr>
+	    
+	    <td class="col-md-2"></td>
+	    <td class="col-md-3"><a href="./setup.html">Setup</a></td>
+	    <td class="col-md-7">Download files required for the lesson</td>
+	  </tr>
+	  
+	 <!--
+	  <tr>	    
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">
+	      1. <a href="./01-uchicago/index.html">UChicago Analysis Facility</a>
+	    </td>
+	    <td class="col-md-7">                            
+              Why having an Analysis Facility at US-ATLAS?
+	    </td>
+	  </tr>
+	  -->
+	 
+	  <tr>	    
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">             
+	      2. <a href="./02-accountrequest/index.html">Account Request & Login via SSH</a>
+	    </td>
+	    <td class="col-md-7">
+              How can I join this awesome US-ATLAS analysis facility?
+	    </td>
+	  </tr>
+	  
+	  <tr>
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">    
+	      3. <a href="./03-atlasenv/index.html">Atlas environment</a>
+	    </td>
+	    <td class="col-md-7">
+              Is it like we were on lxplus?
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">
+	      4. <a href="./04-htcondor/index.html">HTCondor</a>
+	    </td>
+	    <td class="col-md-7">
+              How Do I handle jobs with HTCondor?
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">
+	      5. <a href="./05-coffea_casa/index.html">Coffea Casa</a>
+	    </td>
+	    <td class="col-md-7">
+              What is Coffea Casa?
+	    </td>
+	  </tr>
+	  
+	  <tr>
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">
+              6. <a href="./05-jupyter_lab/index.html">JupyterLab</a>
+	    </td>
+	    <td class="col-md-7">
+              What is JupyterLab?
+	    </td>
+	  </tr>
+	  
+	  <tr>
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">
+	      7. <a href="./07-goodpractices/index.html">Good practices</a>
+	    </td>
+	    <td class="col-md-7">
+              How can we make the best use of the resources at the Analysis Facility
+	    </td>
+	  </tr>
+	  	  
+	  <tr>
+	    
+	    <td class="col-md-2">00:00</td>
+	    <td class="col-md-3">Finish</td>
+	    <td class="col-md-7"></td>
+	  </tr>
+	</table>
+
+      </div>
+
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
 {% comment %}

@@ -54,7 +54,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 	  <tr>	    
 	    <td class="col-md-2">00:00</td>
 	    <td class="col-md-3">
-	      1. <a href="./01-uchicago/index.html">UChicago Analysis Facility</a>
+	      1. <a href="_episodes/01-uchicago.md">UChicago Analysis Facility</a>
 	    </td>
 	    <td class="col-md-7">                            
               Why having an Analysis Facility at US-ATLAS?

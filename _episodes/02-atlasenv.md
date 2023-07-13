@@ -116,8 +116,8 @@ asetup AnalysisBase,21.2.81
 # just pretend to do that, and truncate the file to simulate generating an
 # output file. This is definitely not what you want to do in a real analysis!
 cd data23_13p6TeV
-truncate --size 10MB AOD.11071822._001488.pool.root.1
-cp AOD.11071822._001488.pool.root.1 $HOME/myjob.output
+truncate --size 10MB data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1
+cp data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1 $HOME/myjob.output
 ~~~~
 
 

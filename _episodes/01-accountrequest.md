@@ -28,6 +28,7 @@ keypoints:
 Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> and click <strong>Sign-Up</strong>
 
 ![image info](./../fig/i_a1signup_NEW.png/){:width="800"}
+![image info](./../fig/i_a1signup_NEW.png){:width="700"}
 
 Accept use policy and continue.
 

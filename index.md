@@ -52,7 +52,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p id="where">
   <strong>Where:</strong>
-  <strong>Luce Hall</strong>, 34 Hillhouse Avenue in New Haven, CT. More info ,a href="https://conferencesandevents.yale.edu/about-us/venues/luce-hall"></a>.
+  <strong>Luce Hall</strong>, 34 Hillhouse Avenue in New Haven, CT. More info ,<a href="https://conferencesandevents.yale.edu/about-us/venues/luce-hall"></a>.
 </p>
 
 {% comment %} DATE {% endcomment %}
@@ -76,22 +76,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p id="contact">
   <strong>Contact:</strong>
-  Please email
-  {% if page.email %}
-  {% for email in page.email %}
-  {% if forloop.last and page.email.size > 1 %}
-  or
-  {% else %}
-  {% unless forloop.first %}
-  ,
-  {% endunless %}
-  {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
-  {% endfor %}
-  {% else %}
-  to-be-announced
-  {% endif %}
-  for more information.
+  Please email <a href='mailto:{{Cristiano.Alpigiani@cern.ch}}'>{{Cristiano Alpigiani}}</a>
 </p>
 
 <hr/>

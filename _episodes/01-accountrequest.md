@@ -29,7 +29,8 @@ Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> a
 ![image info](./../fig/i_a1signup_NEW.png){:width="700"}
 
 Accept use policy and continue.
-![image info](./../fig/i_a2policy_NEW.png/){:width="800"}
+
+![image info](./../fig/i_a2policy_NEW.png/){:width="500"}
 
 You will land on the Globus site: <strong>use your CERN or institutional account and login</strong>.
 ![image info](./../fig/i_a3organiz.png){:width="700"}
@@ -61,9 +62,7 @@ if you are not sure if you have generated an SSH Public Key before, try the foll
 Follow the next steps if you don't have a public key or want to create an additional one for this analysis facility (<font color="Bright Gold">it is recommended to use a new SSH key for each instance</font>) for example by replacing "rsa" with "rsa_uc" in the following instructions
 ![image info](./../fig/i_a8newkey.png){:width="700"}
 
-Paste the contents of the clipboard on the next text box and update your profile!
-
-Remember to check you didn't add any blank space or additional characters
+Paste the contents of the clipboard on the next text box and update your profile! Remember to check you didn't add any blank space or additional characters
 ![image info](./../fig/i_a9pastekey.png){:width="700"}
 
 

@@ -94,11 +94,27 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+<hr/>
+{% comment%} CODE OF CONDUCT
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
+This document also outlines how to report an incident if needed.
+</p>
+
+<hr/>
+{% comment %} Documentation
+
+<h2 id="Documentation">Documentation</h2>
+<p> You can find a lot of useful information in <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">Public Documentation for US ATLAS Analysis Facilities</a>. </p>
+
+
+{% comment%} Schedule
 
 {% include base_path.html %}
 
 <hr/>
-
 <h2 id="schedule">Schedule</h2>
 
 <div class="syllabus">
@@ -118,26 +134,9 @@ Display the contact email address set in the configuration file.
 
 
 
-<hr/>
 
-{% comment%}
-CODE OF CONDUCT
-<h2 id="code-of-conduct">Code of Conduct</h2>
-<p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
-This document also outlines how to report an incident if needed.
-</p>
 
-{% comment %}
-Collaborative Notes
 
-<h2 id="Documentation">Documentation</h2>
-
-<p>
-you can find a lot of useful information in <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">Public Documentation for US ATLAS Analysis Facilities</a>.
-</p>
-<hr/>
-{% endif %}
 
 
 {% comment %}

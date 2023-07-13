@@ -54,7 +54,7 @@ Create a directory for the examples (optional)
 For this tutorial we will work at the /home area but remember to move to the /data area when you use bigger data files.
 - Small files (git repositories, source code, text files, configuration files, etc) —> $HOME
 - Large files (input data, output, etc) —-> $DATA
-- 
+ 
 
 ## Accessing ATLAS data: your X509 proxy certificate
 

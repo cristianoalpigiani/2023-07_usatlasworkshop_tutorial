@@ -28,23 +28,23 @@ US ATLAS has three shared Tier 3 analysis facilities providing software & comput
 - Access to ATLAS and <strong>analysis software and tools</strong>
 
 Broad range of activities carried out & supported at the facilities, including:
-- Event generation, detector simulation with ATLAS or standalone software
-- Data movement (via R2D2) and access (using Xcache)
-- Data processing for analysis & statistics using ATLAS software in CVMFS
+- <strong>Event generation</strong>, <strong>detector simulation</strong> with ATLAS or standalone software
+- <strong>Data movement</strong> (via R2D2) and access (using Xcache)
+- <strong>Data processing</strong> for analysis & statistics using ATLAS software in CVMFS
 - Graphical applications for example via X-windows
 - Software development, testing code before submitting to batch system or Panda
-- Supported for Run 3 but also allow for R&D for the future
+- <strong>Supported for Run 3 but also allow for R&D for the future</strong>
 
 <br>
 
 > ## Software & Computing Resources
-> - Resources that fill gaps between grid jobs and interactive analysis on local computers
-> - ssh access and HTCondor batch
-> - Simple Jupyter notebook scheduling to CPU and GPU
-> - Coffea-Casa, ServiceX (IRIS-HEP tools for columnar analysis)
+> - Resources that <strong>fill gaps between grid jobs and interactive analysis on local computers</strong>
+> - ssh access and <strong>HTCondor</strong> batch
+> - Simple <strong>Jupyter notebook</strong> scheduling to CPU and GPU
+> - Coffea-Casa, ServiceX (IRIS-HEP tools for <strong>columnar analysis</strong>)
 > - Interactive access: interactive nodes, containers, node flavors
 > - Processing interfaces: HTCondor access, shared endpoint.
-> - ~1000 cores co-located and close integration with  MWT2. ~1 petabyte of storage
+> - <strong>~1000 cores co-located and close integration with MWT2. ~1 petabyte of storage</strong>
 > - Users start with: 5TB $DATA, 100GB $HOME, 1500 shared CPU cores, shared GPUs.
 {: .callout}
 

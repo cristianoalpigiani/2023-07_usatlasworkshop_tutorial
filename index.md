@@ -24,9 +24,6 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 This tutorial wants to guide the users through the baseline setup to submit a job at an analysis facility (UChicago in this tutorial).
 </div>
 
-
-{% include all_keypoints.html %}
-
 > ## Prerequisites
 >
 >

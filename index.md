@@ -53,7 +53,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p id="where">
   <strong>Where:</strong>
-  <strong>Luce Hall</strong>, 34 Hillhouse Avenue in New Haven, CT. More info ,<a href="https://conferencesandevents.yale.edu/about-us/venues/luce-hall"></a>.
+  <strong>Luce Hall</strong>, 34 Hillhouse Avenue in New Haven, CT. More info <a href="https://conferencesandevents.yale.edu/about-us/venues/luce-hall">here</a>.
 </p>
 
 {% comment %} DATE {% endcomment %}

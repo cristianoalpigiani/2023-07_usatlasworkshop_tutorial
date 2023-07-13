@@ -107,11 +107,11 @@ This document also outlines how to report an incident if needed.
 <div class="syllabus">
   
   <table class="table table-striped">
-    <tr> <td colspan="3"> <strong>Pre tutorial</strong>strong </td> </tr>
+    <tr> <td colspan="3"> <strong>Pre tutorial</strong> </td> </tr>
      <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> <td class="col-md-7"> Why having an Analysis Facility at US-ATLAS? </td> </tr>      
      <tr> <td class="col-md-2">09:45-10:00</td> <td class="col-md-3"><a href="{{ relative_root_path }}/01-accountrequest/index.html">UChicago account request</a> </td> <td class="col-md-7"> How can I join Chicago US-ATLAS analysis facility? </td> </tr>
      <tr> <td class="col-md-2">10:00</td>       <td class="col-md-3"><strong>Coffee</strong> </td> <td class="col-md-7"> Enjoy it! </td> </tr>
-    <tr> <td colspan="3"> <strong>Main tutorial</strong>strong> </td> </tr>
+    <tr> <td colspan="3"> <strong>Main tutorial</strong> </td> </tr>
      <tr> <td class="col-md-2">10:30</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/02-atlasenv/index.html">ATLAS environment setup</a> </td> <td class="col-md-7"> Is it like we were on lxplus? </td> </tr>
      <tr> <td class="col-md-2">10:45</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/03-htcondor/index.html">HT Condor</a> </td> <td class="col-md-7"> How Do I handle jobs with HTCondor? </td> </tr>
      <tr> <td class="col-md-2">11:15</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/04-jupyter_lab/index.html">Jupiter Lab</a> </td> <td class="col-md-7"> What is JupyterLab? </td> </tr>

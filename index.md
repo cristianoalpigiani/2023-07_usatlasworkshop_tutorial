@@ -29,9 +29,9 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 >
 > This assumes you already have:
 >
-> - a CERN account
+> - <strong>A CERN account</strong>
 >
-> - the respective X509 Proxy Certificate, e.g. to access ATLAS Data
+> - <strong>The respective X509 Proxy Certificate, e.g. to access ATLAS Data</strong>
 >
 >
 {: .prereq}

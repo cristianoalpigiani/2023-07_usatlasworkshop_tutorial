@@ -25,7 +25,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 </div>
 
 
-{% include swc/schedule.html %}
+{% include base_path.html %}
 
 > ## Prerequisites
 >

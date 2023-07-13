@@ -8,7 +8,7 @@ objectives:
 - "Get a computing account and sign into UChicago analysis facility "
 
 keypoints:
-- "Look out! Paste only the content of your SSH public key!, and never share the content of your SSH private key!"
+- "Look out! Paste only the content of your SSH public key! Never share the content of your SSH private key!"
 ---
 
 > ## Main steps

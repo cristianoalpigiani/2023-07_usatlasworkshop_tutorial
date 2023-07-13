@@ -39,7 +39,7 @@ Broad range of activities carried out & supported at the facilities, including:
 
 > ## Software & Computing Resources
 > - Resources that <font color="blue"><strong>fill gaps between grid jobs and interactive analysis on local computers</strong></font>
-> - ssh access and <strong>HTCondor</strong> batch
+> - ssh access and <font color="green"><strong>HTCondor</strong></font> batch
 > - Simple <strong>Jupyter notebook</strong> scheduling to CPU and GPU
 > - Coffea-Casa, ServiceX (IRIS-HEP tools for <strong>columnar analysis</strong>)
 > - Interactive access: interactive nodes, containers, node flavors
@@ -56,7 +56,6 @@ Broad range of activities carried out & supported at the facilities, including:
 >
 > - Check the <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">public documentation for US-ATLAS Analysis Facilities</a>
 >
-> - Besides the user support platforms for questions and comments, you can send an email to mduranosuna@niu.edu
 {: .callout}
 
 {% include links.md %}

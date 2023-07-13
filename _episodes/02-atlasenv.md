@@ -49,7 +49,7 @@ Run the script to set up ATLAS environment and look at the image with the output
 
 Create a directory for the examples (optional)
 ~~~bash
- mkdir htcondor_module && cd htcondor_module
+ mkdir htcondor_module
 ~~~
 For this tutorial we will work at the /home area but remember to move to the /data area when you use bigger data files.
 - Small files (git repositories, source code, text files, configuration files, etc) —> $HOME

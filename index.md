@@ -39,7 +39,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 {% include base_path.html %}
 
 <div class="syllabus">  
-    <h2> id="schedule">Schedule</h2>
+    <h2 id="schedule">Schedule</h2>
   
     <table class="table table-striped">
       <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> 

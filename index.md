@@ -21,7 +21,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 ---
 
 <div class="alert alert-success">
-  This tutorial wants to guide the users through the baseline setup to submit a job at an analysis facility (UChicago in this tutorial). It is based on the material presented in this <a href="https://cecilia-duran.github.io/2022-04_gh_usatlas_af_qst/index.html>this</a> tutorial (credits Cecilia Duran).
+  This tutorial wants to guide the users through the baseline setup to submit a job at an analysis facility (UChicago in this tutorial). It is based on the material presented in this <a href="https://cecilia-duran.github.io/2022-04_gh_usatlas_af_qst/index.html">this</a> tutorial (credits Cecilia Duran).
 </div>
 
 > ## Prerequisites

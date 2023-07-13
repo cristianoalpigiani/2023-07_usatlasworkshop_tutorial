@@ -59,7 +59,7 @@ For this tutorial we will work at the /home area but remember to move to the /da
 
 If you need to access ATLAS Data, you will need to copy your X509 certificate to the Analysis Facility. Store your certificate in $HOME/.globus and do:
 
-* note: if the extension of your certificate is `.p12`, just replace `.pfx` with `.p12` *
+* note: if the extension of your certificate is `.p12`, just replace `.pfx` with `.p12`
 
 ~~~bash
 # on the command line:

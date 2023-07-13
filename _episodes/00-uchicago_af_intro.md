@@ -38,10 +38,10 @@ Broad range of activities carried out & supported at the facilities, including:
 <br>
 
 > ## Software & Computing Resources
-> - Resources that <font color="blue"><strong>fill gaps between grid jobs and interactive analysis on local computers</strong></font>
+> - Resources that <font color="LimeGreen"><strong>fill gaps between grid jobs and interactive analysis on local computers</strong></font>
 > - ssh access and <font color="LimeGreen"><strong>HTCondor</strong></font> batch
-> - Simple <strong>Jupyter notebook</strong> scheduling to CPU and GPU
-> - Coffea-Casa, ServiceX (IRIS-HEP tools for <strong>columnar analysis</strong>)
+> - Simple <font color="LimeGreen"><strong>Jupyter notebook</strong></font> scheduling to CPU and GPU
+> - Coffea-Casa, ServiceX (IRIS-HEP tools for <font color="LimeGreen"><strong>columnar analysis</strong></font>)
 > - Interactive access: interactive nodes, containers, node flavors
 > - Processing interfaces: HTCondor access, shared endpoint.
 > - <strong>~1000 cores co-located and close integration with MWT2. ~1 petabyte of storage</strong>

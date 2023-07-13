@@ -120,18 +120,12 @@ This document also outlines how to report an incident if needed.
 </div>
 
 
-
-
-
-
-
-
 {% comment %} SURVEYS {% endcomment %}
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="https://indico.cern.ch/event/1258537/surveys/4452">Pre-workshop Survey</a></p>
-<p><a href="">Post-workshop Survey</a></p>
+<p><a href="">Post-workshop Survey</a> Do we want to have one??????</p>
 
 <hr/>
 

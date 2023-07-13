@@ -43,16 +43,14 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>10:30</td>  <td><a href="/01-uchicago/index.html" target="_blank" rel="noopener noreferrer">puppa</a></td> </tr>
-      <tr> <td>10:40</td>  <td><a href="./_includes/swc/HtCondor.html" target="_blank" rel="noopener noreferrer">HT Condor</a></td> </tr>
-      <tr> <td>10:50</td>  <td><a href="./HtCondor.html">HT Condor</a></td> </tr>
-      <tr> <td>11:00</td>  <td><a href="./swc/HtCondor.html">HT Condor</a></td> </tr>
-      <tr> <td>11:10</td>  <td><a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a></td> </tr>
-      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
-      <tr> <td>15:00</td>  <td>Building Programs with Python (Continued)</td> </tr>
-      <tr> <td>16:00</td>  <td><a href="./04-htcondor/index.html">HTCondor</a></td> </tr>
-      <tr> <td>16:30</td>  <td>END</td> </tr>
+      <tr> <td>Before</td> <td><a href="{{ relative_root_path }}{{ /00-uchicago_af_intro/index.html }}" target="_blank" rel="noopener noreferrer">Intro on AF</a> </td> </tr>      
+      <tr> <td>09:45-10:00</td> <td><a href="{{ relative_root_path }}{{ /01-accountrequest/index.html }}" target="_blank" rel="noopener noreferrer">UChicago account request</a> </td> </tr>
+      <tr> <td>10:00e</td> <td><a href="" target="_blank" rel="noopener noreferrer">Coffee</a> </td> </tr> 
+      <tr> <td>10:30</td> <td><a href="{{ relative_root_path }}{{ /02-atlasenv/index.html }}" target="_blank" rel="noopener noreferrer">ATLAS environment setup</a> </td> </tr>
+      <tr> <td>10:45</td> <td><a href="{{ relative_root_path }}{{ /03-htcondor/index.html }}" target="_blank" rel="noopener noreferrer">HT Condor</a> </td> </tr>
+      <tr> <td>11:15</td> <td><a href="{{ relative_root_path }}{{ /04-jupyter_lab/index.html }}" target="_blank" rel="noopener noreferrer">Jupiter Lab</a> </td> </tr>
+      <tr> <td>Bonus</td> <td><a href="{{ relative_root_path }}{{ /05-coffea_casa/index.html }}" target="_blank" rel="noopener noreferrer">Coffea Casa </a> </td> </tr>
+      <tr> <td>Bonus</td> <td><a href="{{ relative_root_path }}{{ /06-goodpractices/index.html }}" target="_blank" rel="noopener noreferrer">Good Practises</a> </td> </tr>
     </table>
   </div>
 </div>

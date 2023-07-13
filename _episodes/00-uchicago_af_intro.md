@@ -21,6 +21,8 @@ US ATLAS has three shared Tier 3 analysis facilities providing software & comput
 
 ![image info](./../fig/i_sharedtier3.png)
 
+<br>
+
 - Large login nodes for develpment & batch pools or larger-scale processing
 - Storage for local datasets & XCache for remote datasets
 - Access to ATLAS & analysis software and tools
@@ -32,6 +34,8 @@ Broad range of activities carried out & supported at the facilities, including:
 - Graphical applications for example via X-windows
 - Software development, testing code before submitting to batch system or Panda
 - Supported for Run 3 but also allow for R&D for the future
+
+<br>
 
 > ## Software & Computing Resources
 > - Resources that fill gaps between grid jobs and interactive analysis on local computers

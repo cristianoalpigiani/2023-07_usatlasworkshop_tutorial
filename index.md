@@ -48,7 +48,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
       <tr> <td>10:40</td>  <td><a href="./_includes/swc/HtCondor.html" target="_blank" rel="noopener noreferrer">HT Condor</a></td> </tr>
       <tr> <td>10:50</td>  <td><a href="./HtCondor.html">HT Condor</a></td> </tr>
       <tr> <td>11:00</td>  <td><a href="./swc/HtCondor.html">HT Condor</a></td> </tr>
-      <tr> <td>11:10</td>  <td><a href="./_includes/swc/HtCondor.html">HT Condor</a></td> </tr>
+      <tr> <td>11:10</td>  <td><a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a></td> </tr>
       <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
       <tr> <td>15:00</td>  <td>Building Programs with Python (Continued)</td> </tr>
       <tr> <td>16:00</td>  <td><a href="./04-htcondor/index.html">HTCondor</a></td> </tr>
@@ -56,6 +56,32 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
     </table>
   </div>
 </div>
+
+
+<h2>Key Points</h2>
+<table class="table table-striped">
+{% for lesson_episode in lesson_episodes %}
+  {% if site.episode_order %}
+    {% assign episode = site.episodes | where: "slug", lesson_episode | first %}
+  {% else %}
+    {% assign episode = lesson_episode %}
+  {% endif %}
+  {% unless episode.break %}
+    <tr>
+      <td class="col-md-3">
+        <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
+      </td>
+      <td class="col-md-9">
+        <ul>
+        {% for keypoint in episode.keypoints %}
+        <li>{{ keypoint|markdownify }}</li>
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+  {% endunless %}
+{% endfor %}
+</table>
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 

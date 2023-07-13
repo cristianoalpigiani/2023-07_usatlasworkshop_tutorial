@@ -38,9 +38,17 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 
 {% include base_path.html %}
 
-<div class="row">
-  <div class="col-md-6">
+<table class="table table-striped">
+	  <tr>
+	    
+	    <td class="col-md-2"></td>
+	    <td class="col-md-3"><a href="./setup.html">Setup</a></td>
+	    <td class="col-md-7">Download files required for the lesson</td>
+	  </tr>
+
+<div class="syllabus">  
     <h3>Schedule</h3>
+  
     <table class="table table-striped">
       <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> 
       <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>      
@@ -60,7 +68,6 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
       <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
     </table>
   </div>
-</div>
 
 
 {% include base_path.html %}

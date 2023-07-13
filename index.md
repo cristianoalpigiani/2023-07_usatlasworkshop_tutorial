@@ -84,6 +84,9 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
       </td>
     </tr>
   <tr> <td>10:30</td>  <td><a href="/01-uchicago/index.html" target="_blank" rel="noopener noreferrer">puppa</a></td> </tr>
+  <tr> <td>10:30</td>  <td><a href="2023-07_usatlasworkshop_tutorial__/01-uchicago/index.html" target="_blank" rel="noopener noreferrer">puppa1</a></td> </tr>
+  <tr> <td>10:30</td>  <td><a href="{{ relative_root_path }}/01-uchicago/index.html" target="_blank" rel="noopener noreferrer">puppa2</a></td> </tr>
+
   {% endunless %}
 {% endfor %}
 </table>

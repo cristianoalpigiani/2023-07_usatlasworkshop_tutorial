@@ -39,9 +39,11 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 <h2 id="general">General Information</h2>
 
 {% comment %} INTRODUCTION
+
 {% include swc/intro.html %}
 
 {% comment %} AUDIENCE
+
 {% include swc/who.html %}
 
 {% comment %} LOCATION
@@ -50,25 +52,9 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
   <strong>Where:</strong>
   Room XXX
 </p>
-{% elsif online == "true_public" %}
-<p id="where">
-  <strong>Where:</strong>
-  online at <a href="{{page.address}}">{{page.address}}</a>.
-  If you need a password or other information to access the training,
-  the instructor will pass it on to you before the workshop.
-</p>
-{% elsif online == "true_private" %}
-<p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
-</p>
-{% endif %}
 
-{% comment %}
-DATE
+{% comment %} DATE
 
-This block displays the date and links to Google Calendar.
-{% endcomment %}
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
@@ -77,47 +63,14 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-{% comment %}
-SPECIAL REQUIREMENTS
+{% comment %} SPECIAL REQUIREMENTS
 
 <p id="requirements">
   <strong>Requirements:</strong>
-    Participants must bring a laptop with a Mac, Linux, or Windows operating system.
+    No specific requirements. Participants must bring a laptop with a Mac, Linux, or Windows operating system.
 </p>
 
-{% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-{% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-</p>
-{% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
-</p>
-{% endif %}
-
-{% comment %}
-CONTACT EMAIL ADDRESS
+{% comment %} CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
 {% endcomment %}
@@ -140,13 +93,6 @@ Display the contact email address set in the configuration file.
   {% endif %}
   for more information.
 </p>
-
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
-</p>
-
 
 
 {% include base_path.html %}

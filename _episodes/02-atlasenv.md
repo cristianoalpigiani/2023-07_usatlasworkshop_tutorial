@@ -1,6 +1,6 @@
 ---
 title: "Atlas environment"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - "Is it like we were on lxplus?"

@@ -31,7 +31,7 @@ Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> a
 Accept use policy and continue.
 ![image info](./../fig/i_a2policy.png/){:width="600"}
 
-Globus site: use your CERN or institutional account and login.
+You will land on the Globus site: <strong>use your CERN or institutional account and login</strong>.
 ![image info](./../fig/i_a3organiz.png){:width="700"}
 
 After your organization is found, continue.
@@ -42,8 +42,10 @@ Check details, agree to privacy policy and continue.
 
 Allow CI-Connect to acess info
 ![image info](./../fig/i_a5useinfo.png){:width="700"}
-Good! now you will create your profile.
+
+Good! Now you will create your profile.
 ![image info](./../fig/i_a6profile.png){:width="700"}
+
 
 <!------------------------------------------------------------------------------------->
 <!------------------------------ Upload public ssh key--------------------------------->

@@ -58,6 +58,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 </div>
 
 
+{% include base_path.html %}
 <h2>Key Points</h2>
 <table class="table table-striped">
 {% for lesson_episode in lesson_episodes %}
@@ -70,6 +71,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
     <tr>
       <td class="col-md-3">
         <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
+        <a href="01-uchicago.md">{{ episode.title }}</a>
       </td>
       <td class="col-md-9">
         <ul>

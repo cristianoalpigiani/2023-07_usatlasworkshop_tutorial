@@ -76,7 +76,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p id="contact">
   <strong>Contact:</strong>
-  Please email <a href='mailto:Verena.Martinez@cern.ch,amber.roepe-gier@cern.ch,Douglas.Benjamin@cern.ch,Cristiano.Alpigiani@cern.ch'>the tutorial organizers</a>. 
+  Please email <a href='mailto:amber.roepe-gier@cern.ch,Verena.Martinez@cern.ch,Douglas.Benjamin@cern.ch,Cristiano.Alpigiani@cern.ch'>the tutorial organizers</a>. 
 
   
 </p>

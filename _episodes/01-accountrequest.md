@@ -54,7 +54,7 @@ Good! Now you will create your profile.
 
 To create your profile just type in the information required.
 
-Now you will upload an SSH public key, <font color="red">**important: do not copy the contents of a file that does not end in `.pub`. You mus only upload the `public`(.pub)**</font> part of the key.
+Now you will upload an SSH public key, **<font color="red">important: do not copy the contents of a file that does not end in `.pub`. You mus only upload the `public`(.pub)</font>** part of the key.
 if you are not sure if you have generated an SSH Public Key before, try the following instructions on your laptop command line.
 ![image info](./../fig/i_a7oldkey.png){:width="700"}
 

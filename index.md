@@ -38,24 +38,17 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
-INTRODUCTION
+{% comment %} INTRODUCTION
 {% include swc/intro.html %}
 
-{% comment %}
-AUDIENCE
+{% comment %} AUDIENCE
 {% include swc/who.html %}
 
-{% comment %}
-LOCATION
+{% comment %} LOCATION
 
 <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  Room XXX
 </p>
 {% elsif online == "true_public" %}
 <p id="where">

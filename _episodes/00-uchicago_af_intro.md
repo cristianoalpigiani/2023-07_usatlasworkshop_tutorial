@@ -1,6 +1,6 @@
 ---
 title: "UChicago Analysis Facility"
-teaching: 0
+teaching: 5
 exercises: 0
 questions:
 - " Why having an Analysis Facility at US-ATLAS?"
@@ -8,10 +8,12 @@ objectives:
 - " Understanding: US-ATLAS Shared Tier-3 Analysis Facility at UChicago"
 - " Provide contact information and documentation sources"
 keypoints:
-- " Having an Analysis Facility located in the US is a great oportunity to simplify and accelerate the delivery of HEP results."
+- " Having an Analysis Facility located in the US is a great oportunity to simplify and accelerate the delivery of HEP results"
 - " Check the documentation sources and the different contact informations for help, user support, feedback, news, etc! "
 - " Several shared analysis, software & computing resources resources are available, please use them and provide feedback" 
 ---
+
+<br>
 
 US ATLAS has three shared Tier 3 analysis facilities providing software & computing resources, one of the most recent is located at The University of Chicago and was pre-launched in October 2021.
 

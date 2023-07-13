@@ -55,7 +55,6 @@ For this tutorial we will work at the /home area but remember to move to the /da
 - Small files (git repositories, source code, text files, configuration files, etc) —> $HOME
 - Large files (input data, output, etc) —-> $DATA
  
-
 ## Accessing ATLAS data: your X509 proxy certificate
 
 If you need to access ATLAS Data, you will need to copy your X509 certificate to the Analysis Facility. Store your certificate in $HOME/.globus and do:

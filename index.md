@@ -36,9 +36,10 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 >
 {: .prereq}
 
-<hr/>
 
 <h2 id="general">General Information</h2>
+
+<hr/>
 
 {% comment %} INTRODUCTION {% endcomment %}
 
@@ -81,19 +82,21 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
   
 </p>
 
-<hr/>
 {% comment%} CODE OF CONDUCT {% endcomment %}
 
 <h2 id="code-of-conduct">Code of Conduct</h2>
-<p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
-This document also outlines how to report an incident if needed.
-</p>
 
 <hr/>
+
+<p> Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
+This document also outlines how to report an incident if needed. </p>
+
 {% comment %} DOCUMENTATION {% endcomment %}
 
 <h2 id="Documentation">Documentation</h2>
+
+<hr/>
+
 <p> You can find a lot of useful information in <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">Public Documentation for US ATLAS Analysis Facilities</a>. </p>
 
 
@@ -101,8 +104,9 @@ This document also outlines how to report an incident if needed.
 
 {% include base_path.html %}
 
-<hr/>
 <h2 id="schedule">Schedule</h2>
+
+<hr/>
 
 <div class="syllabus">
   
@@ -125,9 +129,11 @@ This document also outlines how to report an incident if needed.
 {% comment %} SURVEYS {% endcomment %}
 
 <h2 id="surveys">Surveys</h2>
+
+<hr/>
+
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="https://indico.cern.ch/event/1258537/surveys/4452">Pre-workshop Survey</a></p>
 <p><a href="">Post-workshop Survey</a> Do we want to have one??????</p>
 
-<hr/>
 

@@ -105,7 +105,7 @@ Run the following lines from the command line, (be sure that you already call yo
 
 ~~~bash
 lsetup rucio
-rucio --verbose download --rse MWT2_DATADISK data16_13TeV:AOD.11071822._001488.pool.root.1
+rucio --verbose download data23_13p6TeV:data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1
 
 # You can run things like asetup as well
 asetup AnalysisBase,21.2.81
@@ -115,7 +115,7 @@ asetup AnalysisBase,21.2.81
 # once setting up rucio, we should exit before setting up an AnalysisBase release.  We will
 # just pretend to do that, and truncate the file to simulate generating an
 # output file. This is definitely not what you want to do in a real analysis!
-cd data16_13TeV
+cd data23_13p6TeV
 truncate --size 10MB AOD.11071822._001488.pool.root.1
 cp AOD.11071822._001488.pool.root.1 $HOME/myjob.output
 ~~~~

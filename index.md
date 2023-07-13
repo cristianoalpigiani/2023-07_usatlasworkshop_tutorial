@@ -31,7 +31,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 >
 > - <strong>A CERN account</strong>
 >
-> - <strong>The respective X509 Proxy Certificate, e.g. to access ATLAS Data</strong>
+> - <strong>The respective X509 Proxy Certificate, e.g. to access ATLAS Data</strong>. You can use the same you copied on lxplus (in case you already did it) or download it from this CERN page: <a href="https://cafiles.cern.ch/cafiles/">https://cafiles.cern.ch/cafiles/</a>.
 >
 >
 {: .prereq}

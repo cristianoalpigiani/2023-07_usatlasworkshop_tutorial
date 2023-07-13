@@ -38,22 +38,22 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <h2 id="general">General Information</h2>
 
-{% comment %} INTRODUCTION
+{% comment %} INTRODUCTION {% endcomment %}
 
 {% include swc/intro.html %}
 
-{% comment %} AUDIENCE
+{% comment %} AUDIENCE {% endcomment %}
 
 {% include swc/who.html %}
 
-{% comment %} LOCATION
+{% comment %} LOCATION {% endcomment %}
 
 <p id="where">
   <strong>Where:</strong>
   Room XXX
 </p>
 
-{% comment %} DATE
+{% comment %} DATE {% endcomment %}
 
 {% if page.humandate %}
 <p id="when">
@@ -63,17 +63,15 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 </p>
 {% endif %}
 
-{% comment %} SPECIAL REQUIREMENTS
+{% comment %} SPECIAL REQUIREMENTS {% endcomment %}
 
 <p id="requirements">
   <strong>Requirements:</strong>
     No specific requirements. Participants must bring a laptop with a Mac, Linux, or Windows operating system.
 </p>
 
-{% comment %} CONTACT EMAIL ADDRESS
+{% comment %} CONTACT EMAIL ADDRESS {% endcomment %}
 
-Display the contact email address set in the configuration file.
-{% endcomment %}
 <p id="contact">
   <strong>Contact:</strong>
   Please email
@@ -95,7 +93,7 @@ Display the contact email address set in the configuration file.
 </p>
 
 <hr/>
-{% comment%} CODE OF CONDUCT
+{% comment%} CODE OF CONDUCT {% endcomment %}
 
 <h2 id="code-of-conduct">Code of Conduct</h2>
 <p>
@@ -104,13 +102,13 @@ This document also outlines how to report an incident if needed.
 </p>
 
 <hr/>
-{% comment %} Documentation
+{% comment %} DOCUMENTATION {% endcomment %}
 
 <h2 id="Documentation">Documentation</h2>
 <p> You can find a lot of useful information in <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">Public Documentation for US ATLAS Analysis Facilities</a>. </p>
 
 
-{% comment%} Schedule
+{% comment%} SCHEDULE {% endcomment %}
 
 {% include base_path.html %}
 

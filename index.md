@@ -43,14 +43,22 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>Before</td> <td><a href="{{ relative_root_path }}{{ /00-uchicago_af_intro/index.html }}" target="_blank" rel="noopener noreferrer">Intro on AF</a> </td> </tr>      
-      <tr> <td>09:45-10:00</td> <td><a href="{{ relative_root_path }}{{ /01-accountrequest/index.html }}" target="_blank" rel="noopener noreferrer">UChicago account request</a> </td> </tr>
-      <tr> <td>10:00e</td> <td><a href="" target="_blank" rel="noopener noreferrer">Coffee</a> </td> </tr> 
-      <tr> <td>10:30</td> <td><a href="{{ relative_root_path }}{{ /02-atlasenv/index.html }}" target="_blank" rel="noopener noreferrer">ATLAS environment setup</a> </td> </tr>
-      <tr> <td>10:45</td> <td><a href="{{ relative_root_path }}{{ /03-htcondor/index.html }}" target="_blank" rel="noopener noreferrer">HT Condor</a> </td> </tr>
-      <tr> <td>11:15</td> <td><a href="{{ relative_root_path }}{{ /04-jupyter_lab/index.html }}" target="_blank" rel="noopener noreferrer">Jupiter Lab</a> </td> </tr>
-      <tr> <td>Bonus</td> <td><a href="{{ relative_root_path }}{{ /05-coffea_casa/index.html }}" target="_blank" rel="noopener noreferrer">Coffea Casa </a> </td> </tr>
-      <tr> <td>Bonus</td> <td><a href="{{ relative_root_path }}{{ /06-goodpractices/index.html }}" target="_blank" rel="noopener noreferrer">Good Practises</a> </td> </tr>
+      <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> 
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>      
+      <tr> <td class="col-md-2">09:45-10:00</td> <td class="col-md-3"><a href="{{ relative_root_path }}/01-accountrequest/index.html">UChicago account request</a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">10:00e</td>      <td class="col-md-3"><a href="" target="_blank" rel="noopener noreferrer">Coffee</a> </td> </tr> 
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">10:30</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/02-atlasenv/index.html">ATLAS environment setup</a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">10:45</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/03-htcondor/index.html">HT Condor</a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">11:15</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/04-jupyter_lab/index.html">Jupiter Lab</a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/05-coffea_casa/index.html">Coffea Casa </a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
+      <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/06-goodpractices/index.html">Good Practises</a> </td> </tr>
+      <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility </td></tr>
     </table>
   </div>
 </div>

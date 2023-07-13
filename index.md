@@ -44,7 +44,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
-      <tr> <td>10:30</td>  <td><a href="swc/HtCondor.html" target="_blank" rel="noopener noreferrer">HT Condor</a></td> </tr>
+      <tr> <td>10:30</td>  <td><a href="/01-uchicago.md/index.html" target="_blank" rel="noopener noreferrer">puppa</a></td> </tr>
       <tr> <td>10:40</td>  <td><a href="./_includes/swc/HtCondor.html" target="_blank" rel="noopener noreferrer">HT Condor</a></td> </tr>
       <tr> <td>10:50</td>  <td><a href="./HtCondor.html">HT Condor</a></td> </tr>
       <tr> <td>11:00</td>  <td><a href="./swc/HtCondor.html">HT Condor</a></td> </tr>
@@ -71,8 +71,8 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
     <tr>
       <td class="col-md-3">
         <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
-        <a href="01-uchicago.md">{{ episode.title }}</a>
-        <a href="_episodes/01-uchicago.md">{{ episode.title }}</a>
+        <a href="/01-uchicago.md/index.html">{{ episode.title }}</a>
+        <a href="/01-uchicago.md">{{ episode.title }}</a>
         <a href="_episodes/01-uchicago.md">{{ episode.url }}</a>
       </td>
       <td class="col-md-9">

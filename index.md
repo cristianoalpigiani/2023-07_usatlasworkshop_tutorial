@@ -36,6 +36,8 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 >
 {: .prereq}
 
+<hr/>
+
 <h2 id="general">General Information</h2>
 
 {% comment %} INTRODUCTION {% endcomment %}

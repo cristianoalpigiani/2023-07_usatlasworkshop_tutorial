@@ -107,6 +107,7 @@ This document also outlines how to report an incident if needed.
 <div class="syllabus">
   
   <table class="table table-striped">
+    <tr> PRE </tr>
      <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> <td class="col-md-7"> Why having an Analysis Facility at US-ATLAS? </td> </tr>      
      <tr> <td class="col-md-2">09:45-10:00</td> <td class="col-md-3"><a href="{{ relative_root_path }}/01-accountrequest/index.html">UChicago account request</a> </td> <td class="col-md-7"> How can I join Chicago US-ATLAS analysis facility? </td> </tr>
      <tr> <td class="col-md-2">10:00</td>       <td class="col-md-3"><strong>Coffee</strong> </td> <td class="col-md-7"> Enjoy it! </td> </tr>

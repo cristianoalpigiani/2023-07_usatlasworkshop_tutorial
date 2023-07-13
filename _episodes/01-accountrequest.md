@@ -26,9 +26,11 @@ keypoints:
 
 
 Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> and click <strong>Sign-Up</strong>
-![image info](./../fig/i_a1signup_NEW.png/){:width="200"}
+
+![image info](./../fig/i_a1signup_NEW.png/){:width="800"}
 
 Accept use policy and continue.
+
 ![image info](./../fig/i_a2policy.png/){:width="600"}
 
 You will land on the Globus site: <strong>use your CERN or institutional account and login</strong>.
@@ -54,7 +56,7 @@ Good! Now you will create your profile.
 
 To create your profile just type in the information required.
 
-Now you will upload an SSH public key, **important: do not copy the contents of a file that does not end in `.pub`. You mus only upload the `public`(.pub)** part of the key.
+Now you will upload an SSH public key, <font color="red">**important: do not copy the contents of a file that does not end in `.pub`. You mus only upload the `public`(.pub)**</font> part of the key.
 if you are not sure if you have generated an SSH Public Key before, try the following instructions on your laptop command line.
 ![image info](./../fig/i_a7oldkey.png){:width="700"}
 

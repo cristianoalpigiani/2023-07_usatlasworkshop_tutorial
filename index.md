@@ -36,61 +36,13 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 >
 {: .prereq}
 
-{% include base_path.html %}
-
-<hr/>
-
-<h2 id="schedule">Schedule</h2>
-
-<div class="syllabus">
-  
-  <table class="table table-striped">
-     <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> <td class="col-md-7"> Why having an Analysis Facility at US-ATLAS? </td> </tr>      
-     <tr> <td class="col-md-2">09:45-10:00</td> <td class="col-md-3"><a href="{{ relative_root_path }}/01-accountrequest/index.html">UChicago account request</a> </td> <td class="col-md-7"> How can I join this awesome US-ATLAS analysis facility? </td> </tr>
-     <tr> <td class="col-md-2">10:00</td>       <td class="col-md-3"><a href="">Coffee</a> </td> <td class="col-md-7"> Enjoy it! </td> </tr>
-     <tr> <td class="col-md-2">10:30</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/02-atlasenv/index.html">ATLAS environment setup</a> </td> <td class="col-md-7"> Is it like we were on lxplus? </td> </tr>
-     <tr> <td class="col-md-2">10:45</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/03-htcondor/index.html">HT Condor</a> </td> <td class="col-md-7"> How Do I handle jobs with HTCondor? </td> </tr>
-     <tr> <td class="col-md-2">11:15</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/04-jupyter_lab/index.html">Jupiter Lab</a> </td> <td class="col-md-7"> What is JupyterLab? </td> </tr>
-     <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/05-coffea_casa/index.html">Coffea Casa </a> </td> <td class="col-md-7"> What is Coffea Casa? </td> </tr>
-     <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/06-goodpractices/index.html">Good Practises</a> </td> <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility? </td> </tr>
-  </table>
-
-</div>
-
-
 <h2 id="general">General Information</h2>
 
-{% comment %}
 INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
-
-{% comment %}
 AUDIENCE
-
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
 {% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
 
 {% comment %}
 LOCATION
@@ -243,6 +195,30 @@ Edit the text to match who can attend the workshop. For instance:
     This workshop is open to ....
 </p>
 {% endcomment %}
+
+
+{% include base_path.html %}
+
+<hr/>
+
+<h2 id="schedule">Schedule</h2>
+
+<div class="syllabus">
+  
+  <table class="table table-striped">
+     <tr> <td class="col-md-2">Before</td>      <td class="col-md-3"><a href="{{ relative_root_path }}/00-uchicago_af_intro/index.html">Intro on AF</a> </td> <td class="col-md-7"> Why having an Analysis Facility at US-ATLAS? </td> </tr>      
+     <tr> <td class="col-md-2">09:45-10:00</td> <td class="col-md-3"><a href="{{ relative_root_path }}/01-accountrequest/index.html">UChicago account request</a> </td> <td class="col-md-7"> How can I join this awesome US-ATLAS analysis facility? </td> </tr>
+     <tr> <td class="col-md-2">10:00</td>       <td class="col-md-3"><a href="">Coffee</a> </td> <td class="col-md-7"> Enjoy it! </td> </tr>
+     <tr> <td class="col-md-2">10:30</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/02-atlasenv/index.html">ATLAS environment setup</a> </td> <td class="col-md-7"> Is it like we were on lxplus? </td> </tr>
+     <tr> <td class="col-md-2">10:45</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/03-htcondor/index.html">HT Condor</a> </td> <td class="col-md-7"> How Do I handle jobs with HTCondor? </td> </tr>
+     <tr> <td class="col-md-2">11:15</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/04-jupyter_lab/index.html">Jupiter Lab</a> </td> <td class="col-md-7"> What is JupyterLab? </td> </tr>
+     <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/05-coffea_casa/index.html">Coffea Casa </a> </td> <td class="col-md-7"> What is Coffea Casa? </td> </tr>
+     <tr> <td class="col-md-2">Bonus</td>       <td class="col-md-3"><a href="{{ relative_root_path }}/06-goodpractices/index.html">Good Practises</a> </td> <td class="col-md-7"> How can we make the best use of the resources at the Analysis Facility? </td> </tr>
+  </table>
+
+</div>
+
+
 
 <hr/>
 

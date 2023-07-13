@@ -23,9 +23,9 @@ US ATLAS has three shared Tier 3 analysis facilities providing software & comput
 
 <br>
 
-- Large login nodes for develpment & batch pools or larger-scale processing
-- Storage for local datasets & XCache for remote datasets
-- Access to ATLAS & analysis software and tools
+- <strong>Large login nodes</strong> for develpment & batch pools or larger-scale processing
+- <strong>Storage</strong> for local datasets & XCache for remote datasets
+- Access to ATLAS and <strong>analysis software and tools</strong>
 
 Broad range of activities carried out & supported at the facilities, including:
 - Event generation, detector simulation with ATLAS or standalone software

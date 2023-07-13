@@ -83,10 +83,10 @@ Now create an ATLAS VOMS proxy in the usual way:
 
 ~~~bash
 # on the command line
+lsetup emi
 voms-proxy-init -voms atlas
 # Enter GRID pass phrase for this identity:
 # ...
-lsetup emi
 voms-proxy-init -voms atlas -out $HOME/x509proxy
 # Enter GRID pass phrase for this identity:
 # ...

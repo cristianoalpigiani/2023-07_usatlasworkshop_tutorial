@@ -83,6 +83,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
         </ul>
       </td>
     </tr>
+  <tr> <td>10:30</td>  <td><a href="/01-uchicago/index.html" target="_blank" rel="noopener noreferrer">puppa</a></td> </tr>
   {% endunless %}
 {% endfor %}
 </table>

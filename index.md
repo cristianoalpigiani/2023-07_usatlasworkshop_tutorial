@@ -25,8 +25,6 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 </div>
 
 
-{% include base_path.html %}
-
 {% include all_keypoints.html %}
 
 > ## Prerequisites

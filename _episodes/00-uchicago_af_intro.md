@@ -38,7 +38,7 @@ Broad range of activities carried out & supported at the facilities, including:
 <br>
 
 > ## Software & Computing Resources
-> - Resources that <strong>fill gaps between grid jobs and interactive analysis on local computers</strong>
+> - Resources that <font color="blue"><strong>fill gaps between grid jobs and interactive analysis on local computers</strong></font>
 > - ssh access and <strong>HTCondor</strong> batch
 > - Simple <strong>Jupyter notebook</strong> scheduling to CPU and GPU
 > - Coffea-Casa, ServiceX (IRIS-HEP tools for <strong>columnar analysis</strong>)

@@ -38,14 +38,6 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
 
 {% include base_path.html %}
 
-<table class="table table-striped">
-	  <tr>
-	    
-	    <td class="col-md-2"></td>
-	    <td class="col-md-3"><a href="./setup.html">Setup</a></td>
-	    <td class="col-md-7">Download files required for the lesson</td>
-	  </tr>
-
 <div class="syllabus">  
     <h3>Schedule</h3>
   

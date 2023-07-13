@@ -76,7 +76,9 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p id="contact">
   <strong>Contact:</strong>
-  Please email <a href='mailto:{{Cristiano.Alpigiani@cern.ch}}'>{{Cristiano Alpigiani}}</a>
+  Please email <a href='mailto:Verena.Martinez@cern.ch'>Verena.Martinez@cern.ch</a>, <a href='mailto:{{amber.roepe-gier@cern.ch}}'>{{amber.roepe-gier@cern.ch}}</a>, <a href='mailto:{{Douglas.Benjamin@cern.ch}}'>{{Douglas Benjamin}}</a>, <a href='mailto:{{Cristiano.Alpigiani@cern.ch}}'>{{Cristiano Alpigiani}}</a>, 
+
+  
 </p>
 
 <hr/>

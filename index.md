@@ -73,6 +73,7 @@ This tutorial wants to guide the users through the baseline setup to submit a jo
         <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
         <a href="01-uchicago.md">{{ episode.title }}</a>
         <a href="_episodes/01-uchicago.md">{{ episode.title }}</a>
+        episode.url
       </td>
       <td class="col-md-9">
         <ul>

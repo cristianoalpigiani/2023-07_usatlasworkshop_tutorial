@@ -26,12 +26,10 @@ keypoints:
 
 
 Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> and click <strong>Sign-Up</strong>
-
 ![image info](./../fig/i_a1signup_NEW.png){:width="700"}
 
 Accept use policy and continue.
-
-![image info](./../fig/i_a2policy.png/){:width="600"}
+![image info](./../fig/i_a2policy.png/){:width="700"}
 
 You will land on the Globus site: <strong>use your CERN or institutional account and login</strong>.
 ![image info](./../fig/i_a3organiz.png){:width="700"}

@@ -99,7 +99,7 @@ voms-proxy-init -voms atlas -out $HOME/x509proxy
 
 <h2 id="rucio">Read data from Rucio</h2>
 
-Rucio documentation can be found <a href="https://rucio.cern.ch/documentation/">here</a>.
+**NOTE:** Rucio documentation can be found <a href="https://rucio.cern.ch/documentation/">here</a>.
 
 This is an example to read data from rucio, pretend to process it, and then push a small copied back to the $HOME filesystem. It assumes your X509 proxy certificate is valid and in your home directory.
 
@@ -108,15 +108,6 @@ Run the following lines from the command line, (be sure that you already call yo
 ~~~bash
 lsetup rucio
 rucio --verbose download data23_13p6TeV:data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1
-
-# You can run things like asetup as well
-asetup AnalysisBase,21.2.81
-
-
-# This is where you would do your data analysis via AnalysisBase, etc. And actually,
-# once setting up rucio, we should exit before setting up an AnalysisBase release.  We will
-# just pretend to do that, and truncate the file to simulate generating an
-# output file. This is definitely not what you want to do in a real analysis!
 cd data23_13p6TeV
 truncate --size 10MB data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1
 cp data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1 $HOME/myjob.output

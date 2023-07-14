@@ -99,6 +99,8 @@ voms-proxy-init -voms atlas -out $HOME/x509proxy
 
 <h2 id="rucio">Read data from Rucio</h2>
 
+Rucio documentation can be found <a href="https://rucio.cern.ch/documentation/">here</a>.
+
 This is an example to read data from rucio, pretend to process it, and then push a small copied back to the $HOME filesystem. It assumes your X509 proxy certificate is valid and in your home directory.
 
 Run the following lines from the command line, (be sure that you already call your file `myatlasenv.sh`, you only have to do this once per session)
@@ -131,7 +133,7 @@ cp data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1 $H
 <!------------------------------------------------------------------------------------->
 <!------------------------------ data to localgroupdisks --------------------------------->
 
-<h2 id="rucio">Transfer data to local group disks</h2>
+<h2 id="rucio">Transfer data to local group disks (R2D2)</h2>
 
 If you need to transfer data/MC from the grid to a local group disk, you can use the Rucio web interface for the data transfer (R2D2). Here the link: <a href="">https://rucio-ui.cern.ch/r2d2/request</a>. You will need to use your 509 Proxy Certificate.
 

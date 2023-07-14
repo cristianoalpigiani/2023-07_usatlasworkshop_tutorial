@@ -30,6 +30,9 @@ keypoints:
 {: .callout}-->
 
 # About Coffea Casa
+
+<hr/>
+
 Coffea-Casa -  Is a Prototype of an Analysis Facility for Columnar Object Framework For Effective Analy (Coffea). Provides services for "low latency columnar analysis" based on Dask and Jupyter.
 It lowes time for analysis providing a user-friendly computational environment that simplifies and accelerates the delivery of HEP results.
 
@@ -62,8 +65,6 @@ It lowes time for analysis providing a user-friendly computational environment t
     >
 >
 {: .callout}
-
-
 
 
 
@@ -113,7 +114,7 @@ It lowes time for analysis providing a user-friendly computational environment t
 
 ServiceX, a component of the IRIS-HEP Intelligent Data Delivery Service, is an experiment-agnostic service to enable on-demand columnar data delivery tailored for interactive, array-based Pythonic analyses. It provides an interface to data storage services and frontend for users to enable columnar transformations.
 
-Columnar data delivery
+**Columnar data delivery**
 
 ServiceX seeks to enable on-demand data delivery of columnar data in a variety of formats for physics analyses. It provides a uniform backend to data storage services, ensuring the user doesn't have to know how or where the data is stored, and is capable of on-the-fly data transformations into a variety of formats (ROOT files, Arrow arrays, Parquet files, ...) The service offers preprocessing functionality via an analysis description language called func-adl that allows users to filter events, request columns, and even compute new variables. This enables the user to start from any format and extract only the data needed for an analysis.
 

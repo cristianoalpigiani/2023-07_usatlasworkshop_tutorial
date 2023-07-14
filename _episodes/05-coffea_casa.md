@@ -33,8 +33,7 @@ keypoints:
 
 <hr/>
 
-Coffea-Casa -  Is a Prototype of an Analysis Facility for Columnar Object Framework For Effective Analy (Coffea). Provides services for "low latency columnar analysis" based on Dask and Jupyter.
-It lowes time for analysis providing a user-friendly computational environment that simplifies and accelerates the delivery of HEP results.
+Coffea-Casa -  Is a Prototype of an Analysis Facility for <font color=LimeGreen>**Columnar Object Framework For Effective Analy (Coffea)**</font>. Provides services for "low latency columnar analysis" based on Dask and Jupyter. It lowes time for analysis providing a **user-friendly computational environment that simplifies and accelerates the delivery of HEP results**.
 
 >
 > Deployed via Fluxcd

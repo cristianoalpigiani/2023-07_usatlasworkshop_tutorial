@@ -132,7 +132,7 @@ If you need to transfer data/MC from the grid to a local group disk, you can use
 
 Once you reach the main page, you can follow the "tour" that will guide you through the steps to transfer your data to any LOCALGROUPDISK.
 
-![image info](./../fig/R2D2_MainPage.png){:width="1200"}
+![image info](./../fig/R2D2_MainPage.png){:width="1600"}
 
 
 <!------------------------------------------------------------------------------------->

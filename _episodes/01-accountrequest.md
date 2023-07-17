@@ -27,31 +27,31 @@ keypoints:
 
 Go to <a href="https://af.uchicago.edu">UChicago Analysis Facility Website</a> and click <strong>Sign-Up</strong>
 
-![image info](./../fig/i_a1signup_NEW.png){:width="700"}
+![image info](./../fig/i_a1signup_NEW.png){:width="700"}{: .image-with-shadow }
 
 Accept use policy and continue.
 
-![image info](./../fig/i_a2policy_NEW2.png/){:width="600"}
+![image info](./../fig/i_a2policy_NEW2.png/){:width="600"}{: .image-with-shadow }
 
 You will land on the Globus site: <strong>use your CERN or institutional account and login</strong>.
 
-![image info](./../fig/i_a3organiz.png){:width="700"}
+![image info](./../fig/i_a3organiz.png){:width="700"}{: .image-with-shadow }
 
 After your organization is found, continue.
 
-![image info](./../fig/i_a3organizlog.png){:width="700"}
+![image info](./../fig/i_a3organizlog.png){:width="700"}{: .image-with-shadow }
 
 Check details, agree to privacy policy and continue.
 
-![image info](./../fig/i_a4details.png){:width="700"}
+![image info](./../fig/i_a4details.png){:width="700"}{: .image-with-shadow }
 
 Allow CI-Connect to acess info
 
-![image info](./../fig/i_a5useinfo.png){:width="700"}
+![image info](./../fig/i_a5useinfo.png){:width="700"}{: .image-with-shadow }
 
 Good! Now you will create your profile.
 
-![image info](./../fig/i_a6profile.png){:width="700"}
+![image info](./../fig/i_a6profile.png){:width="700"}{: .image-with-shadow }
 
 
 <!------------------------------------------------------------------------------------->
@@ -63,13 +63,13 @@ To create your profile just type in the information required.
 
 Now you will upload an SSH public key, **<font color="red">important: do not copy the contents of a file that does not end in `.pub`. You must only upload the `public`(.pub)</font>** part of the key.
 if you are not sure if you have generated an SSH Public Key before, try the following instructions on your laptop command line.
-![image info](./../fig/i_a7oldkey.png){:width="700"}
+![image info](./../fig/i_a7oldkey.png){:width="700"}{: .image-with-shadow }
 
 Follow the next steps if you don't have a public key or want to create an additional one for this analysis facility (<font color="Bright Gold">it is recommended to use a new SSH key for each instance</font>) for example by replacing "rsa" with "rsa_uc" in the following instructions
-![image info](./../fig/i_a8newkey.png){:width="700"}
+![image info](./../fig/i_a8newkey.png){:width="700"}{: .image-with-shadow }
 
 Paste the contents of the clipboard on the next text box and update your profile! Remember to check you didn't add any blank space or additional characters
-![image info](./../fig/i_a9pastekey.png){:width="700"}
+![image info](./../fig/i_a9pastekey.png){:width="700"}{: .image-with-shadow }
 
 
 <!------------------------------------------------------------------------------------->
@@ -83,7 +83,7 @@ ssh <your_unix_username>@login.af.uchicago.edu
 ```
 After logged in you should see something like the following images, containing a welcome message, links to information resources, and your file system quota report
 
-![image info](./../fig/i_a10insshlogo.png){:width="500"}
+![image info](./../fig/i_a10insshlogo.png){:width="500"}{: .image-with-shadow }
 
 If it does not work, please double check that you have been approved, have a public key uploaded and have waited at least 15 minutes. If you still have an issue, feel free to reach out to us for help.
 

@@ -17,15 +17,15 @@ keypoints:
 
 US ATLAS has three shared Tier 3 analysis facilities providing software & computing resources, one of the most recent is located at The University of Chicago and was pre-launched in October 2021.
 
-**<center> Funded by NSF (Natural Science Foundation) and co-located with MWT2-UC </center>**
+**<center> Funded by NSF (National Science Foundation) and co-located with MWT2-UC </center>**
 
-![image info](./../fig/i_sharedtier3.png)
+![image info](./../fig/i_sharedtier3.png){: .image-with-shadow }
 
 <br>
 
 - <strong>Large login nodes</strong> for develpment & batch pools or larger-scale processing
 - <strong>Storage</strong> for local datasets & XCache for remote datasets
-- Access to ATLAS and <strong>analysis software and tools</strong>
+- Access to ATLAS <strong>analysis software and tools</strong>
 
 Broad range of activities carried out & supported at the facilities, including:
 - <strong>Event generation</strong>, <strong>detector simulation</strong> with ATLAS or standalone software
@@ -48,7 +48,7 @@ Broad range of activities carried out & supported at the facilities, including:
 > - Users start with: 5TB $DATA, 100GB $HOME, 1500 shared CPU cores, shared GPUs.
 {: .callout}
 
-![image info](./../fig/i_aboutpage.png)
+![image info](./../fig/i_aboutpage.png){: .image-with-shadow }
 
 > ## Contact info
 >

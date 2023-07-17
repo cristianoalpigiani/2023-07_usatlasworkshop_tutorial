@@ -3,9 +3,9 @@ title: "HTCondor"
 teaching:  0
 exercises: 0
 questions:
-- "How Do I handle jobs with HTCondor?"
+- "What does a condor job entail?"
 objectives:
-- "Learn the mean 5 steps to Run a job"
+- "Learn the steps to run a job"
 
 keypoints:
 - "Work decomposition: prepare, create, submit, manage and examine the job "
@@ -16,8 +16,6 @@ keypoints:
 > - <a href="#intro">Introduction</a>
 >
 > - <a href="#running">Running a job</a>
->
-> - <a href="#quick">HTCondor quick start</a> 
 >
 > - <a href="#submitting">Submitting a job</a>
 >
@@ -35,7 +33,7 @@ HTCondor is a specialized batch system for managing compute-intensive jobs. It p
 
 This architecture can be implemented in different ways.
 
-![image info](./../fig/onecomputer.png) | ![image info](./../fig/manycomputers.png)
+![image info](./../fig/onecomputer.png){: .image-with-shadow } | ![image info](./../fig/manycomputers.png){: .image-with-shadow }
 
 
 
@@ -59,300 +57,8 @@ This architecture can be implemented in different ways.
  
 Work Decomposition
 
-![image info](./../fig/run_job_steps.png)
+![image info](./../fig/run_job_steps.png){: .image-with-shadow }
 
-
-
-
-<!------------------------------------------------------------------------------------->
-<!----------------------------- htcondor quick start----------------------------------->
-
-<h2 id="quick"> HTCondor quick start </h2>
-
-HTCondor is a job scheduler, you give HTCondor a file containing commands that tell it how to run jobs. HTCondor locates a machine that can run each job within the pool of machines, packages up the job and ships it off to this execute machine, the jobs run and output is returned to the machine that submitted the jobs
-
-This guides provides enough guidance to submit and observer the successful completion of a first job, it then suggests extensions that you can apply to your particular jobs
-
-
-
-> This guide presumes that:
->
-> - You are logged into a working on the submit machine.
->
-> - Your program executable, your submit description file and any needed input files are all on the file system of the submit machine.
->
-> - Your job (the program executable) is able to run without any interactive input.
->
-{: .callout}	
-	
-- A first HTCondor job 
-
-For HTCondor to run a job it must be given details such as the names and location of the exe and all needed input files in a submit description file.
-
-This first executable program is a shell script. Try this example, log in to the submit machine, and use an editor to type in or copy and paste the file contents. Name the resulting file:
-
-
-`sleep.sh`
-```bash
-#!/bin/bash
-# file name: sleep.sh
-
-TIMETOWAIT="6"
-echo "sleeping for $TIMETOWAIT seconds"
-/bin/sleep $TIMETOWAIT
-
-```
-Change the sleep.sh file to be executable by running the following command:
-
-```bash
-chmod u+x sleep.sh
-```
-
-The submit description file describes the job. To submit this sample job, again use an editor to create the file:
-
-`sleep.sub`
-```bash
-# sleep.sub -- simple sleep job
-
-executable              = sleep.sh
-log                     = sleep.log
-output                  = outfile.txt
-error                   = errors.txt
-should_transfer_files   = Yes
-when_to_transfer_output = ON_EXIT
-queue
-```
-
-The first line of this submit description file is a comment. Comments begin with the # character. Comments do not span lines.
-
-Each line of the submit description file has the form
-
-```bash
-command_name = value
-```
-
-The command name is case insensitive and precedes an equals sign. Values to right of the equals sign are likely to be case sensitive. 
-
-Next in this file is a specification of the executable to run. It specifies the program that becomes the HTCondor job. For this example, it is the file name of the script. A full path and executable name, or a path and executable relative to the current working directory may be specified.
-
-The log command causes a job event log file named sleep.log to be created on the submit machine once the job is submitted.
-
-If this script/batch file were to be invoked from the command line, and outside of HTCondor, its single line of output
-
-```
-sleeping for 6 seconds
-```
-would be sent to standard output. When submitted as an HTCondor job, standard output of the execute machine is on that execute machine. HTCondor captures standard output in a file due to the output command in the submit description file. This example names the redirected standard output file outfile.txt, and this file is returned to the submit machine when the job completes. The same structure is specified for standard error, as specified with the error command.
-
-The commands
-
-```bash
-should_transfer_files   = Yes
-when_to_transfer_output = ON_EXIT
-```
-direct HTCondor to explicitly send the needed files, including the executable, to the machine where the job executes. These commands will likely not be necessary for jobs in which the submit machine and the execute machine access a shared file system. However, including these commands will allow this first sample job to work under a large variety of pool configurations.
-
-The queue command tells HTCondor to run one instance of this job.
-
-- Submitting the job
-
-With this submit description file, all that remains is to hand off the job to HTCondor. With the current working directory being the one that contains the sleep.sub submit description file and the executable (sleep.sh or sleep.bat), this job submission is accomplished with the command line
-
-```bash
-condor_submit sleep.sub
-```
-{: .output}
-
-If the submission is successful, the terminal will display a response that identifies the job, of the form
-
-~~~
-Submitting job(s).
-1 job(s) submitted to cluster 6.
-~~~
-{: .output}
-
-- Monitoring the job
-
-Once the job has been submitted, command line tools may help you follow along with the progress of the job. `The condor_q` command prints a listing of all the jobs currently in the queue. For example, a short time after the user Kris submits the sleep job the submit machine on a pool that has no other queued jobs, the output may appear as
-
-~~~
-condor_q
--- Submitter: example.wisc.edu : <128.105.14.44:56550> : example.wisc.edu
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
-    6.0   kris            2/13 10:49   0+00:00:03 R  0   97.7 sleep.sh
-
-1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
-~~~~
-{: .output}
-
-The queue might contain many jobs. To see only Kris’ jobs, add an option to the condor_q command that specifies to only print Kris’ jobs:
-
-```bash
-condor_q -submitter kris
-```
-{: .output}
-
-The first column of output from condor_q identifies the job; the identifier is composed of two integers separated by a period. The first integer is known as a cluster number, and it will be the same for each of the potentially many jobs submitted by a single invocation of condor_submit. The second integer in the identifier is known as a process ID, and it distinguishes between distinct job instances that have the same cluster number. These values start at 0.
-
-Of interest in this output, the job is running, and it has used 3 seconds of time so far.
-
-At job completion, the log file contains
-
-~~~ Output
-000 (006.000.000) 02/13 10:49:04 Job submitted from host: <128.105.14.44:46062>
-...
-001 (006.000.000) 02/13 10:49:24 Job executing on host: <128.105.15.5:43051?PrivNet=cs.wisc.edu>
-...
-006 (006.000.000) 02/13 10:49:30 Image size of job updated: 100000
-        0  -  MemoryUsage of job (MB)
-        0  -  ResidentSetSize of job (KB)
-...
-005 (006.000.000) 02/13 10:49:31 Job terminated.
-        (1) Normal termination (return value 0)
-                Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-                Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-                Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
-                Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-        23  -  Run Bytes Sent By Job
-        113  -  Run Bytes Received By Job
-        23  -  Total Bytes Sent By Job
-        113  -  Total Bytes Received By Job
-        Partitionable Resources :    Usage  Request Allocated
-           Cpus                 :                 1         1
-           Disk (KB)            :   100000   100000   2033496
-           Memory (MB)          :        0       98      2001
-...
-~~~
-{: .output}
-
-Each event in the job event log file is separated by a line containing three periods. For each event, the first 3-digit value is an event number.
-
-- Removing a job
-
-Successfully submitted jobs will occasionally need to be removed from the queue. Invoke the condor_rm command specifying the job identifier as a command line argument. Kris’ job may be removed from the queue with
-```
-condor_rm 6.0
-```
-{: .output}
-
-Specification of the cluster number only as with the command
-
-```
-condor_rm 6
-```
-{: .output}
-
-will cause all jobs within that cluster to be removed.
-
-- The science Job Example
-
-A **second example** job illustrates aspects of file specification for the job. This program does not use standard input or output; instead, the command line to invoke this program specifies two input files and one output file. For this example, the command line to invoke science.exe (not as an HTCondor job) will be
-
-```
-science.exe infile-A.txt infile-B.txt outfile.txt
-```
-{: .output}
-
-While the name of the executable is specified in the submit description file with the executable command, the remainder of the command line will be specified with the arguments command.
-
-Here is the submit description file for this job:
-
-`science1.sub`
-``` bash
-# science1.sub -- run one instance of science.exe
-executable              = science.exe
-arguments               = "infile-A.txt infile-B.txt outfile.txt"
-transfer_input_files    = infile-A.txt,infile-B.txt
-should_transfer_files   = IF_NEEDED
-when_to_transfer_output = ON_EXIT
-log                     = science1.log
-queue
-```
-The input files infile-A.txt and infile-B.txt will need to be available on the execute machine within the pool where the job runs. HTCondor cannot interpret command line arguments, The submit command transfer_input_files instructs HTCondor to transfer these input files from the machine where the job is submitted to the machine chosen to execute the job. The default operation of HTCondor is to transfer all files created by the job on the execute machine back to the submit machine. Therefore, there is no specification of the outfile.txt output file.
-
-This example submit description file modifies the commands that direct the transfer of files from submit machine to execute machine and back again.
-
-```bash
-should_transfer_files   = IF_NEEDED
-when_to_transfer_output = ON_EXIT
-```
-{: .output}
-
-
-These values are the HTCondor defaults. The should_transfer_files command specifies whether HTCondor should assume the existence of a file system shared by the submit machine and the execute machine. 
-
-When the job completes, all files created by the executable as it ran are transferred back to the submit machine.
-
-- Expanding the science Job and the Organization of Files
-
-A **third example** promotes understanding of how HTCondor makes the submission of lots of jobs easy. Assume that the science.exe job is to be run 40 times. If the input and output files were exactly the same for each run:
-
-```bash
-queue
-```
-to
-
-```bash
-queue 40
-```
-{: .output}
-
-It is likely that this does not produce the desired outcome, as the output file created, outfile.txt, has the same name for each queued instance of the job, and thus this file of results for each run conflicts. Chances are that the input files also must be distinct for each of the 40 separate instances of the job.
-
-HTCondor offers the use of a macro that can uniquely name each run’s input and output file names. The $(Process) macro causes substitution by the process ID from the job identifier. The submit description file for this proposed solution uniquely names the files:
-
-```bash
-# science2.sub -- run 40 instances of science.exe
-executable              = science.exe
-arguments               = "infile-$(Process)A.txt infile-$(Process)B.txt outfile$(Process).txt"
-transfer_input_files    = infile-$(Process)A.txt,infile-$(Process)B.txt
-should_transfer_files   = IF_NEEDED
-when_to_transfer_output = ON_EXIT
-log                     = science2.log
-queue 40
-```
-{: .output}
-
-The 40 instances of this job will have process ID values that run from 0 to 39. The two input files for process ID 0 are infile-0A.txt and infile-0B.txt, the ones for process ID 1 will be infile-1A.txt and infile-1B.txt, and so on, all the way to process ID 39, which will be files infile-39A.txt and infile-39B.txt. Using this macro for the output file naming of each of the 40 jobs creates outfile0.txt for process ID 0; outfile1.txt for process ID 1; and so on, to outfile39.txt for process ID 39.
-
-Assume now that there will be 100 instances of the science.exe job, and each instance has distinct input files, and produces a distinct output file. A recommended organization introduces a unique directory for each job instance. The following submit description file facilitates this organization by specifying the directory with the initialdir command. The directories for this example are named run0, run1, etc. all the way to run99 for the 100 instances of the following example submit file:
-
-```bash
-# science3.sub -- run 100 instances of science.exe, with
-#  unique directories named by the $(Process) macro
-executable              = science.exe
-arguments               = "infile-A.txt infile-B.txt outfile.txt"
-should_transfer_files   = IF_NEEDED
-when_to_transfer_output = ON_EXIT
-initialdir              = run$(Process)
-transfer_input_files    = infile-A.txt,infile-B.txt
-log                     = science3.log
-queue 100
-```
-
-The input and output files for each job instance can again be the initial simple names that do not incorporate the $(Process) macro. These files are distinct for each run due to their placement within a uniquely named directory. This organization also works well for executables that do not facilitate command line naming of input or output files.
-
-Here is a listing of the files and directories on the submit machine within this suggested directory structure. The files created due to submitting and running the jobs are shown preceded by an asterisk (*). Only a subset of the 100 directories are shown. Directories are identified using the Linux (and Mac) convention of appending the directory name with a slash character (/).
-
-```output
-science.exe
-science3.sub
-run0/
-    infile-A.txt
-    infile-B.txt
-    * outfile.txt
-    * science3.log
-run1/
-    infile-A.txt
-    infile-B.txt
-    * outfile.txt
-    * science3.log
-run2/
-    infile-A.txt
-    infile-B.txt
-    * outfile.txt
-    * science3.log
-```
 
 
 <!------------------------------------------------------------------------------------->
@@ -363,10 +69,7 @@ run2/
 
 The `condor_submit` command takes a job description file as input and submits the job to HTCondor.  Items such as the name of the executable to run, the initial working directory, and command-line arguments to the program all go into the submit description file. `condor_submit` creates a job ClassAd based upon the information, and HTCondor works toward running the job.
 
-- Sample submit description files
-
-
-   - Example 1
+### Example 1: Basic Submission
 
 This example is one of the simplest submit description files possible. It queues the program myexe for execution somewhere in the pool. As this submit description file does not request a specific operating system to run on, HTCondor will use the default, which is to run the job on a machine which has the same architecture and operating system it was submitted from.
 
@@ -417,14 +120,12 @@ queue
 >
 {: .callout}
 
-   - Example 2
+### Example 2: Pre-Defined Macros
 
-A simple example
+A simple example to show off some additional features and using pre-defined macros.
 
 `example2.sub`
 ```bash
-# Example 2: Show off some fancy features,
-# including the use of pre-defined macros.
 
 executable     = foo
 arguments      = input_file.$(Process)
@@ -448,9 +149,9 @@ Each instance of this program works on one input file.
 We prepare 150 copies of this input file in the current directoy, and name them input_file.0, ... up to input_file.149. 
 Whit transfer_input_files, we tell HTCondor which input file to send to each instance of the program.
 
-   - Example 3
+### Example 3: Integrating Python Scripts
 
-A simple example with a python script
+We can also include python scripts to our job.
 
 We write our executable in the file:
 
@@ -505,7 +206,7 @@ check status:
 condor_q
 ```
 
-   - Example 4
+### Example 4: Base Example with C Program
 
 A simple example with a small program in C.
 
@@ -616,7 +317,7 @@ condor_q
 ```
 {: .output}
 
-- Using parameters in the simple job
+#### Adding Parameters
 
 If we would like to have our program calculate a whole set of values for different inputs. How can we do that?
 
@@ -680,8 +381,8 @@ We calculated: 24
 ```
 {: .output}
 
-
-- Submitting many similar jobs with one queue command
+<!---
+#### Submitting many similar jobs with one queue command
 
 A wide variety of job submissions can be specified with extra information to the queue submit command. This flexibility eliminates the need for a job wrapper or Perl script for many submissions.
 
@@ -711,106 +412,122 @@ The optional slice specifies a subset of the list of items using the Python synt
 
 Here are a set of examples.
 
-   - Example 1
-
-```bash
-transfer_input_files = $(filename)
-arguments            = -infile $(filename)
-queue filename matching files *.dat
-```
-
-```bash
-transfer_input_files = initial.dat
-arguments            = -infile initial.dat
-queue
-transfer_input_files = middle.dat
-arguments            = -infile middle.dat
-queue
-transfer_input_files = ending.dat
-arguments            = -infile ending.dat
-queue
-```
-
-   - Example 2
-
-```bash 
-queue 1 input in A, B, C
-```
-
-```bash
-input = A
-queue
-input = B
-queue
-input = C
-queue
-````
-
-   - Example 3
-
-```bash
-queue input, arguments from (
-  file1, -a -b 26
-  file2, -c -d 92
-)
-```
-Each of the two variables specified is given a value from the list of items. For this example the queue command expands to
-
-```bash
-input = file1
-arguments = -a -b 26
-queue
-input = file2
-arguments = -c -d 92
-queue
-```
-
-   - Example 4
-
-```bash
-queue from seq 7 9 |
-```
-
-feeds the list of items to queue with the output of seq 7 9:
-
-```bash
-item = 7
-queue
-item = 8
-queue
-item = 9
-queue
-```
-- Variables in the Submit Description File
+> ## Example 1
+>
+> ~~~ bash
+>transfer_input_files = $(filename)
+>arguments            = -infile $(filename)
+>queue filename matching files *.dat
+> ~~~
+>
+> ~~~ bash
+>transfer_input_files = initial.dat
+>arguments            = -infile initial.dat
+>queue
+>transfer_input_files = middle.dat
+>arguments            = -infile middle.dat
+>queue
+>transfer_input_files = ending.dat
+>arguments            = -infile ending.dat
+>queue
+> ~~~
+>
+> {: .output}
+{: .solution}
 
 
-`$(Cluster) or $(ClusterId)`
+> ## Example 2
+>
+> ~~~ bash 
+>queue 1 input in A, B, C
+> ~~~
+>
+> ~~~ bash
+>input = A
+>queue
+>input = B
+>queue
+>input = C
+>queue
+> ~~~
+>
+> {: .output}
+{: .solution}
 
-`$(Process) or $(ProcId)`
+> ## Example 3
+>
+> ~~~ bash
+>queue input, arguments from (
+>  file1, -a -b 26
+>  file2, -c -d 92
+>)
+> ~~~
+> Each of the two variables specified is given a value from the list of items. For this example the queue command expands to:
+>
+> ~~~ bash
+>input = file1
+>arguments = -a -b 26
+>queue
+>input = file2
+>arguments = -c -d 92
+>queue
+> ~~~
+>
+> {: .output}
+{: .solution}
 
-`$$(a_machine_classad_attribute)`
+> ## Example 4
+>
+> ~~~ bash
+>queue from seq 7 9 |
+> ~~~
+>
+>feeds the list of items to queue with the output of seq 7 9:
+>
+> ~~~ bash
+>item = 7
+>queue
+>item = 8
+>queue
+>item = 9
+>queue
+> ~~~
+>
+> {: .output}
+{: .solution}
 
-`$$([ an_evaluated_classad_expression ])`
-   
-`$(ARCH)`
+> ## Variables in the Submit Description File
+>
+>
+>`$(Cluster) or $(ClusterId)`
+>
+>`$(Process) or $(ProcId)`
+>
+>`$$(a_machine_classad_attribute)`
+>
+>`$$([ an_evaluated_classad_expression ])`
+>   
+>`$(ARCH)`
+>
+>`$(OPSYS) $(OPSYSVER) $(OPSYSANDVER) $(OPSYSMAJORVER)`
+>
+>`$(SUBMIT_FILE)`
+>
+>`$(SUBMIT_TIME)`
+>
+>`$(Year) $(Month) $(Day)`
+>
+>`$(Item)`
+>
+>`$(ItemIndex)`
+>
+>`$(Step)`
+>
+>`$(Row)`
+> {: .output}
+{: .callout}
 
-`$(OPSYS) $(OPSYSVER) $(OPSYSANDVER) $(OPSYSMAJORVER)`
-
-`$(SUBMIT_FILE)`
-
-`$(SUBMIT_TIME)`
-
-`$(Year) $(Month) $(Day)`
-
-`$(Item)`
-
-`$(ItemIndex)`
-
-`$(Step)`
-
-`$(Row)`
-
-- Including Submit Commands Defined Elsewhere
+### Including Submit Commands Defined Elsewhere
 
 Externally defined submit commands can be incorporated into the submit description file using the syntax
 
@@ -840,7 +557,7 @@ transfer_input_files = infiles/A.dat, infiles/B.dat, infiles/C.dat
 
 is incorporated into the submit description file.
 
-- Using Conditionals in the Submit Description File
+### Using Conditionals in the Submit Description File
 
 Conditional if/else semantics are available in a limited form. The syntax:
 
@@ -890,7 +607,7 @@ results in X = -1, when MY_UNDEFINED_VARIABLE is not yet defined.
 
     - False or no or the value 0 The statement(s) are not incorporated.
 
-This sintax
+This syntax
 
 ```bash
 if <simple condition>
@@ -1047,7 +764,7 @@ queue 15000
 
 {: .solution}
 
-
+-->
 
 <!------------------------------------------------------------------------------------->
 <!----------------------------- managing a job ---------------------------------------->
@@ -1056,7 +773,7 @@ queue 15000
 
 What to do once jobs are submitted?
 
-- Checking on the progress of jobs
+### Checking on the progress of jobs
 
 You can check on your jobs with the condor_q command.
 
@@ -1147,9 +864,9 @@ bardolph.c INTEL    LINUX        1.000  nice-user.condor@cs. chevre.cs.wisc.
 ~~~
 {: .output}
 
-- Peeking in on a running job’s output files
+### Peeking in on a running job’s output files
 
-`The condor_tail` command can copy output files from a running job on a remote machine back to the submit machine. condor_tail uses the same networking stack as HTCondor proper, so it will work if the execute machine is behind a firewall.
+The `condor_tail` command can copy output files from a running job on a remote machine back to the submit machine. condor_tail uses the same networking stack as HTCondor proper, so it will work if the execute machine is behind a firewall.
 
 ```bash
 condor_tail -f xx.yy
@@ -1160,7 +877,7 @@ To copy a different file, run
 condor_tail xx.yy name_of_output_file
 ```
 
-- Removing a job from a queue
+### Removing a job from a queue
 
 `condor_rm`
 
@@ -1187,14 +904,14 @@ condor_q -nobatch
 ```
 {: .output}
 
-- Placing a job on hold
+### Placing a job on hold
 
 `condor_hold`
 `condor_release`
 
 Jobs that are running when placed on hold will start over from the beginning when released.
 
-- Changing the priority of jobs
+### Changing the priority of jobs
 
 HTCondor provides each user with the capability of assigning priorities to each submitted job.
 
@@ -1220,7 +937,7 @@ condor_q -nobatch raman
 
 It is important to note that these job priorities are completely different from the user priorities assigned by HTCondor. 
 
-- Why is the job not running?
+## Job Not Running?
 
 The most common reason why the job is not running is that HTCondor has not yet been through its periodic negotiation cycle, in which queued jobs are assigned to machines within the pool and begin their execution.
 
@@ -1266,15 +983,15 @@ Suggestions:
 ```
 {: .output}
 
-
-- Job in the Hold State
+<!---
+### Job in the Hold State
 
 For the example job ID 16.0, use:
 
 condor_q  -hold  16.0
+-->
 
-
-- Job Termination
+### Job Termination
 
 
 A ticket of execution is usually issued by the condor_startd, and includes:
@@ -1358,7 +1075,7 @@ nice-user.condor@cs.                 6                504                  0
 ~~~
 {: .output }
 
-
+<!---
 - Automatically managing a job
 
    - Automatically rerunning a failed job
@@ -1421,6 +1138,7 @@ on_exit_hold = ExitBySignal == true
 Go to <a href="https://htcondor.readthedocs.io/en/latest/man-pages/index.html">Command reference manual</a>
 
 {: .challenge}
+-->
 
 <!-------------------------------------------------------------------------------------->
 <!----------------------------- services for running jobs ------------------------------>

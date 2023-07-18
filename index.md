@@ -47,7 +47,7 @@ collaborative_notes: https://usatlas.readthedocs.io/projects/af-docs/en/latest/ 
 
 <p><br /></p>
 <div class="text-center">
-  <a href="https://indico.cern.ch/event/1258537/">
+  <a href="https://indico.cern.ch/event/1258537/" target="_blank" rel="noopener noreferrer">
     <button type="button" class="btn btn-info" style="font-size:large;text-align:center">US ATLAS Summer Workshop 2023</button>
   </a>
 </div>

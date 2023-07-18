@@ -107,7 +107,9 @@ This document also outlines how to report an incident if needed. </p>
 
 <p> You can find a lot of useful information in <a href="https://usatlas.readthedocs.io/projects/af-docs/en/latest/">Public Documentation for US ATLAS Analysis Facilities</a>. </p>
 
+<p>You can find the list of ATLAS software tutorials here <a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SoftwareTutorial">SoftwareTutorial</a></p>, while here <a href="https://atlassoftwaredocs.web.cern.ch/ASWTutorial/TutorialWeek/asking_questions/">Where to ask questions</a> you can find the main mailing lists to get assistance on software.
 
+  
 {% comment%} SCHEDULE {% endcomment %}
 
 {% include base_path.html %}

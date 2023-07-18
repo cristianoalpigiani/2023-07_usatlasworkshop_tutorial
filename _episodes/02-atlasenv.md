@@ -44,7 +44,7 @@ Run the script to set up ATLAS environment and look at the image with the output
  # at this point, you can lsetup root, rucio, athena, etc.
 ~~~
 
-![image info](./../fig/i_a11insshmenu.png){:width="600"}
+![image info](./../fig/i_a11insshmenu.png){:width="600"}{: .image-with-shadow }
 
 
 Create a directory for the examples (optional)
@@ -128,11 +128,11 @@ cp data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1 $H
 
 If you need to transfer data/MC from the grid to a local group disk, you can use the Rucio web interface for the data transfer (R2D2). Here the link: <a href="">https://rucio-ui.cern.ch/r2d2/request</a>. You will need to use your 509 Proxy Certificate.
 
-![image info](./../fig/R2D2_509ProxyCert.png){:width="400"}
+![image info](./../fig/R2D2_509ProxyCert.png){:width="400"}{: .image-with-shadow }
 
 Once you reach the main page, you can follow the "tour" that will guide you through the steps to transfer your data to any LOCALGROUPDISK.
 
-![image info](./../fig/R2D2_MainPage.png){:width="1600"}
+![image info](./../fig/R2D2_MainPage.png){:width="1600"}{: .image-with-shadow }
 
 
 <!------------------------------------------------------------------------------------->

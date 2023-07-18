@@ -44,7 +44,7 @@ Coffea-Casa -  Is a Prototype of an Analysis Facility for **<font color=LimeGree
 >
 {: .callout}
 
-![image info](./../fig/i_c1draft.png){:width="700"}
+![image info](./../fig/i_c1draft.png){:width="700"}{: .image-with-shadow }
 
 > ## Documentation sources 
 > 
@@ -72,34 +72,34 @@ Coffea-Casa -  Is a Prototype of an Analysis Facility for **<font color=LimeGree
 
 <a href="https://coffea.af.uchicago.edu">access point to the Coffea-Casa Analysis Facility at UChicago</a>
 
-![image info](./../fig/coffea_access.png){:width="700"}
+![image info](./../fig/coffea_access.png){:width="700"}{: .image-with-shadow }
 
 <h2 id="authz">Atlas AuthZ authentication</h2>
 
-![image info](./../fig/coffea_authz.png){:width="700"}
+![image info](./../fig/coffea_authz.png){:width="700"}{: .image-with-shadow }
 
-![image info](./../fig/coffea_authz2.png){:width="700"}
+![image info](./../fig/coffea_authz2.png){:width="700"}{: .image-with-shadow }
 
 <h2 id="docker">Docker</h2>
 
-![image info](./../fig/coffea_docker.png){:width="700"}
-![image info](./../fig/coffea_docker2.png){:width="700"}
+![image info](./../fig/coffea_docker.png){:width="700"}{: .image-with-shadow }
+![image info](./../fig/coffea_docker2.png){:width="700"}{: .image-with-shadow }
 
 <h2 id="cluster">Cluster resources</h2>
 
-![image info](./../fig/coffea_resources.png){:width="600"}
-![image info](./../fig/coffea_resources2.png){:width="600"} 
+![image info](./../fig/coffea_resources.png){:width="600"}{: .image-with-shadow }
+![image info](./../fig/coffea_resources2.png){:width="600"}{: .image-with-shadow }
 
 <h2 id="open">Open a new console or file</h2>
 
-![image info](./../fig/coffea_new.png){:width="600"} 
-![image info](./../fig/coffea_new2.png){:width="700"}
+![image info](./../fig/coffea_new.png){:width="600"}{: .image-with-shadow }
+![image info](./../fig/coffea_new2.png){:width="700"}{: .image-with-shadow }
 
 <h2 id="git">Using git</h2>
 
-![image info](./../fig/coffea_git.png){:width="600"} 
-![image info](./../fig/coffea_git2.png){:width="600"} 
-![image info](./../fig/coffea_git3.png){:width="600"}
+![image info](./../fig/coffea_git.png){:width="600"}{: .image-with-shadow } 
+![image info](./../fig/coffea_git2.png){:width="600"}{: .image-with-shadow } 
+![image info](./../fig/coffea_git3.png){:width="600"}{: .image-with-shadow }
 
 # Coffea-Casa ServiceX
 
@@ -118,19 +118,19 @@ ServiceX, a component of the IRIS-HEP Intelligent Data Delivery Service, is an e
 ServiceX seeks to enable on-demand data delivery of columnar data in a variety of formats for physics analyses. It provides a uniform backend to data storage services, ensuring the **user doesn't have to know how or where the data is stored**, and is capable of **on-the-fly data transformations into a variety of formats** (ROOT files, Arrow arrays, Parquet files, ...) The service offers preprocessing functionality via an analysis description language called func-adl that allows users to filter events, request columns, and even compute new variables. This enables the user to start from any format and extract only the data needed for an analysis.
 
 <h2 id="servicex">ServiceX</h2>
-![image info](./../fig/servicex_1workflow.png){:width="700"}
+![image info](./../fig/servicex_1workflow.png){:width="700"}{: .image-with-shadow }
   
 To use them one has to register and get approved. Sign in will lead you to a Globus registration page, where you may choose to use the account connected to your institution.
-![image info](./../fig/servicex_2globus.png){:width="700"}
+![image info](./../fig/servicex_2globus.png){:width="700"}{: .image-with-shadow }
   
 Once approved, you will be able to see the status of your requests in a dashboard.
-![image info](./../fig/servicex_3dash.png){:width="700"}
+![image info](./../fig/servicex_3dash.png){:width="700"}{: .image-with-shadow }
   
 For your code to be able to authenticate your requests, you need to download a servicex.yaml fie, that shout be placed in your working directory. The file is downloaded from your profile page:
-![image info](./../fig/servicex_4profile.png){:width="700"}
+![image info](./../fig/servicex_4profile.png){:width="700"}{: .image-with-shadow }
 
 
-<h2 id="columnar">Check this examples!! ( please (ꈍ◡ꈍ ) )</h2> 
+<h2 id="columnar">Check these examples!! ( please (ꈍ◡ꈍ ) )</h2> 
 
 
 - <a href="https://github.com/nikoladze/agc-tools-workshop-2021-physlite">Columnar data analysis with DAOD_PHYSLITE example</a>

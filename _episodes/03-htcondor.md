@@ -75,6 +75,13 @@ This example is one of the simplest submit description files possible. It queues
 
 Before submitting a job to HTCondor, it is a good idea to test it first locally, by running it from a command shell. This example job might look like this when run from the shell prompt.
 
+Create a file called ```myexe``` with the following:
+```bash
+echo "Hello World"
+```
+
+and make it executable with ```chmod +x myexe``` and test with:
+
 ```bash
 ./myexe SomeArgument
 ```
@@ -122,12 +129,12 @@ queue
 
 ### Example 2: Pre-Defined Macros
 
-A simple example to show off some additional features and using pre-defined macros.
+A simple example to show off some additional features and using pre-defined macros. Make a file called ```input_file``` with whatever you like and create the following submission script:
 
 `example2.sub`
 ```bash
 
-executable     = foo
+executable     = myexe
 arguments      = input_file.$(Process)
 
 request_memory = 4096
@@ -136,7 +143,7 @@ request_disk   = 16383
 
 error   = err.$(Process)
 output  = out.$(Process)
-log     = foo.log
+log     = myexe.log
 
 should_transfer_files = yes
 transfer_input_files = input_file.$(Process)
@@ -170,7 +177,7 @@ print "hello world received argument = " +sys.argv[1]
 ```
 
 ```bash
-python hello.py
+python hello.py atlas
 ```
 Create the directory:
 

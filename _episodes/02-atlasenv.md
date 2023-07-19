@@ -126,7 +126,7 @@ cp data23_13p6TeV.00455975.physics_Main.merge.AOD.f1367_m2185._lb0820._0001.1 $H
 
 <h2 id="rucio">Transfer data to local group disks (Rucio R2D2)</h2>
 
-If you need to transfer data/MC from the grid to a local group disk, you can use the Rucio web interface for the data transfer (R2D2). Here the link: <a href="">https://rucio-ui.cern.ch/r2d2/request</a>. You will need to use your 509 Proxy Certificate.
+If you need to transfer data/MC from the grid to a local group disk, you can use the Rucio web interface for the data transfer (R2D2). Here the link: <a href="https://rucio-ui.cern.ch/r2d2/request">https://rucio-ui.cern.ch/r2d2/request</a>. You will need to use your 509 Proxy Certificate.
 
 ![image info](./../fig/R2D2_509ProxyCert.png){:width="400"}{: .image-with-shadow }
 
